@@ -27,7 +27,7 @@ def main():
     print("Welcome to my dice game!")
     # I will get the users name and store it in a variable called "name"
     name = input("What is your name?: ")
-    print("Welcome, " + name + "!")
+    print(f"Hello, {name}!")
     # I will also get the users guess on what they think the sum will be and store it in a variable called "guess". I will also convert the input to 'int'
     guess = int(input("Pick a number between 3-18: "))
     # Adding an 'if' statement to check if the user has inputed a negative number, if so then I will convert it back to positive using the 'abs()' function.
@@ -51,8 +51,8 @@ def main():
     else:
         # Otherwise, if the user has not answered correctly then we will give them the answer and tell him how far off they were.
         print("Oh no! You answered wrong. Better luck next time.")
-        print("The answer is: " + str(answer))
-        print("Your off by: " + str(abs(guess - answer)))
+        print(f"The answer is: {answer}")
+        print(f"Your off by: {abs(guess - answer)}")
 
 
 # checking to see if file is ran as script not module
